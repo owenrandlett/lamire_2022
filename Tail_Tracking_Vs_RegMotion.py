@@ -160,7 +160,7 @@ print(ps)
 #%%
 x = lags[lag_0-lag_plot:lag_0+lag_plot]/1.98
 mean_xcorr = np.mean(lags_all, axis=0)
-sterr_xcorr = np.std(lags_all, axis=0)/len(folders)
+sterr_xcorr = np.std(lags_all, axis=0)/np.sqrt(len(folders))
 with plt.rc_context({'font.size':20}):
     plt.figure(figsize=(7,5))
     plt.plot(x, mean_xcorr)
