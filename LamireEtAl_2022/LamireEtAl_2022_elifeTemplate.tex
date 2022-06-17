@@ -138,13 +138,14 @@ These analyses confirm habituation behaviour manifests from multiple distinct mo
 
 For the remainder of the analyses we chose to focus on the mechanisms leading to the habituation of response probability, as this is the criterion for which it is easiest to identify the link between neural activity and behavior, providing the best entry point for studying the circuit mechanisms of long-term habituation. To identify the most promising hits, we sought to identify drugs that:
 
-\begin{enumerate}
-\item Have minimal effects on the naive response to DFs, but strong effects during the training and/or memory-retention periods. This would prioritize pathways that affect habituation, rather than simply DF responsiveness.
 
-\item Have minimal effects on other aspects of behaviour. We purposefully assayed additional behaviours after habituation training in order to exclude compounds that would alter generalized arousal, movement ability/paralysis, or visual impairment. Such drugs would strongly influence DF responsiveness, but likely independently of pathways related to habituation. 
+\begin{description}
+\item[1)] Have minimal effects on the naive response to DFs, but strong effects during the training and/or memory-retention periods. This would prioritize pathways that affect habituation, rather than simply DF responsiveness.
 
-\item Show similar behavioural effects to other drugs screened that target the same molecular pathway. Such relationships can be used to cross validate, yet we note that our library choice was very broad, and target coverage is non-uniform. Therefore a lack of multiple hits targeting the same pathway should not necessarily be taken as strong evidence of a false positive. 
-\end{enumerate}
+\item[2)] Have minimal effects on other aspects of behaviour. We purposefully assayed additional behaviours after habituation training in order to exclude compounds that would alter generalized arousal, movement ability/paralysis, or visual impairment. Such drugs would strongly influence DF responsiveness, but likely independently of pathways related to habituation. 
+
+\item[3)] Show similar behavioural effects to other drugs screened that target the same molecular pathway. Such relationships can be used to cross validate, yet we note that our library choice was very broad, and target coverage is non-uniform. Therefore a lack of multiple hits targeting the same pathway should not necessarily be taken as strong evidence of a false positive. 
+\end{description}
 
 \begin{figure}
 \includegraphics[width=0.9\textwidth]{Figure_3-HitsValidation.png}
@@ -389,16 +390,19 @@ To test this model, we asked how PTX and Melatonin influence the dynamic activit
 We compared the Ca\textsuperscript{2+} activity patterns in neurons from fish treated with vehicle (0.1\% DMSO), PTX, or Melatonin (\autoref{fig:8}B-M). At the behavioural level, we found a trend indicating that we were able manipulate habituation pharmacologically in our tethered imaging assay, though this was very subtle (\autoref{fig:8}B). This discrepancy relative to the very strong behavioural effects in freely-swimming animals (\autoref{fig:3}) likely result from the head-restrained protocol, which itself strongly inhibits behavioural output. Therefore assaying for habituation at the behavioural level is difficult to interpret. Alternatively, drug access to the brain may have been compromised by the agarose mounting resulting in weaker behavioural effects. Yet, since we did observe a trend in behavioural data, we proceeded under the assumption that the drugs were having the desired effects. 
 
 We examined the activity profiles of neurons that belonged to the 12 different functional clusters. Surprisingly, we observed no strong alterations of the response profiles of these neurons (\autoref{fig:8}C-K, \autoref{fig:8}-\autoref{fig:S8}). However, what was clearly altered was the proportion of neurons that belonged to different functional classes (\autoref{fig:8}L,M).
-
-From these analyses we conclude the following:
+\\
+\\From these analyses we conclude the following:
 
 \begin{description}
 \item[A)]
 The pharmacological manipulations did not alter the activity of neurons in such a way as to alter the average activity states of the population within each cluster (\autoref{fig:8}-\autoref{fig:S8}). Instead, the proportion of neurons belonging to different functional classes changed. This may result from our classification scheme, or could point to fixed and relatively inflexible processing strategies that the brain is using in the context of dark-flash habituation.
+\vspace{2mm}
 \item[B)]
 The effect of PTX on cluster reassignment generally followed the type of effects predicted from \underline{Model 2}, increasing the proportion of cells falling into the weaker depressing classes (\autoref{fig:8}M). This pattern was most clear in the classes with “Short” and “Long” \emph{Response Shapes}, which are those that included the most strongly depressed classes of neurons, and would thus be the most influenced by GABA-mediated inhibition. Non-depressing classes were not strongly modulated, consistent with a model that these neurons receive little GABAergic input. Therefore, we conclude that \underline{Model 2} is consistent with much, but not all of the alternations in response to PTX. For example, PTX increased the proportion of $6_{M}^{weakD}$ neurons, which does not follow from \underline{Model 2}.
+\vspace{2mm}
 \item[C)] 
 Based on our hypothesis that the effect of Melatonin is to potentiate GABA-ergic inhibition, we expected PTX and Melatonin to have opposite effects. Similar to (B), this hypothesis is not fully supported by all of the data, but is consistent with the observations in a subset of functional classes, perhaps those that are most critical for the habituation of response probability. Indeed, the expected opposite effects of PTX and Melatonin were present in two of the most conspicuous functional classes: $4_{L}^{strgD}$, which is most strongly correlated with motor output and thus is most closely associated with behavioural initiation (\autoref{fig:6}F), and $11_{S}^{weakD}$, which showed the clearest GABA-like anatomical pattern in the tectum. 
+\vspace{2mm}
 \item[D)]
 One of the most interesting classes of neurons we observed during habituation are those that potentiate their responses ($12_{M}^{Pot}$). Remarkably, both Melatonin and PTX increased the proportion of neurons within this class. This result, combined with our observation that these cells are non-GABAergic (\autoref{fig:7}E), strongly suggests that the role of these cells is not simply to suppress activity in the circuit to inhibit behavioural responses (as in \underline{Model 1}). The functional role played by this class of neurons during habituation remains mysterious. However, it may relate to some of the common behavioural effects of Melatonin and PTX, such as the inhibition of habituation when measuring response Displacement (\autoref{fig:3}A,B, \autoref{fig:3}-\autoref{fig:S3}E, F). 
 
@@ -447,8 +451,7 @@ Collectively, our brain-wide imaging data point to a central role for inhibitory
 
 Habituation is the simplest form of learning, yet despite its presumed simplicity a model of how this process is regulated in the vertebrate brain is still emerging. Here we have combined two powerful methods offered by the larval zebrafish model: high-throughput behavioural screening and whole brain functional imaging. By applying these methods to long-term habituation, we identified dozens of pharmacological agents that strongly modulate habituation learning and distinct classes of neurons that are activated by DFs and are modulated during learning. The systematic datasets we generated contain large amounts of additional information that await future validation and integration into a unified model for DF habituation. Nonetheless they yielded a multitude of hypotheses as to the molecular and circuit mechanisms of habituation that can be followed up in future studies. 
 
-Our approach validates the utility of virtual anatomical analyses using atlases and pharmacological manipulations to test and constrain neural circuit models in pan-neuronal imaging experiments, for which anatomical and molecular information is often sparse. From these analyses we have arrived at the first iteration of a brain-wide circuit model for long-term dark flash habituation. 
-, where distributed plasticity mechanisms mediate the independent adaptation of different components of responses \cite{Randlett2019-fi}. The diversity of molecular pathways and functional neuronal types we have identified here are consistent with that view of habituation, and indicate that considerable biological complexity exists that awaits discovery within the “simplest” form of learning. 
+Our approach validates the utility of virtual anatomical analyses using atlases and pharmacological manipulations to test and constrain neural circuit models in pan-neuronal imaging experiments, for which anatomical and molecular information is often sparse. From these analyses we have arrived at the first iteration of a brain-wide circuit model for long-term dark flash habituation, where distributed plasticity mechanisms mediate the independent adaptation of different components of responses \cite{Randlett2019-fi}. The diversity of molecular pathways and functional neuronal types we have identified here are consistent with that view of habituation, and indicate that considerable biological complexity exists that awaits discovery within the “simplest” form of learning. 
 
 
 \section{Methods}
